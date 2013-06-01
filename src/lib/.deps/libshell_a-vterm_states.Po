@@ -1,0 +1,8 @@
+libshell_a-vterm_states.o: vterm_states.cpp /usr/include/stdc-predef.h \
+ vterm.h type.h
+
+/usr/include/stdc-predef.h:
+
+vterm.h:
+
+type.h:

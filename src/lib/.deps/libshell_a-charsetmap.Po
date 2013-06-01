@@ -1,0 +1,8 @@
+libshell_a-charsetmap.o: charsetmap.cpp /usr/include/stdc-predef.h \
+ vterm.h type.h
+
+/usr/include/stdc-predef.h:
+
+vterm.h:
+
+type.h:
