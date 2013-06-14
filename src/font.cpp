@@ -250,11 +250,12 @@ static void openFont(u32 index)
 		FcPatternGetBool(pattern, FC_HINTING, 0, &hinting);
 		FcPatternGetInteger(pattern, FC_HINT_STYLE, 0, &hint_style);
 
-		if (!hinting || hint_style == FC_HINT_NONE) {
-			load_flags |= FT_LOAD_NO_HINTING;
-		} else {
-			load_flags |= FT_LOAD_TARGET_LIGHT;
-		}
+		//if (!hinting || hint_style == FC_HINT_NONE) {
+			//load_flags |= FT_LOAD_NO_HINTING;
+		//} else {
+			//load_flags |= FT_LOAD_TARGET_LIGHT;
+		//}
+        load_flags |= FT_LOAD_TARGET_NORMAL;
 	} else {
 		load_flags |= FT_LOAD_TARGET_MONO;
 	}
